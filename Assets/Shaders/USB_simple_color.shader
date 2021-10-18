@@ -2,6 +2,7 @@ Shader "USB/USB_simple_color"
 {
     Properties
     {
+         //Shader Properties
         _MainTex ("Texture", 2D) = "white" {}
         _Reflection ("Reflection", Cube) = "black" {}
         _3DTexture ("3D Texture", 3D) = "White" {}
@@ -11,22 +12,40 @@ Shader "USB/USB_simple_color"
         _Color("Tint", Color) = (1,1,1,1)
         _VPos("Vertex Position", Vector) = (0,0,0,1)
         
+        [Space(30)]
+        //Material Property Drawers
+        [Header(Material Property Drawers)]
+        [Toggle] _Enable ("Enable ?", Float) = 0
+        [KeywordEnum(Off, Red, Blue)] _Option ("Color Option", Float) = 0
+        [Enum(Off, 0, Front, 1 , Back, 2)] _Face ("FaceCulling", Float) = 0
+        [PowerSlider(3.0)] _Brightness ("Brightness", Range(0.01, 1)) = 0.08
+        [IntRange] _Samples ("Samples", Range(0,225)) = 100
+        
+        [Space(30)]
+        [Header(Blend modes)]
+        [Enum(UnityEngine.Rendering.BlendMode)] _SrcBlend ("SrcFactor", Float) = 1
+        [Enum(UnityEngine.Rendering.BlendMode)] _DstBlend ("DstFactor", Float) = 1
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { 
+        "RenderType"="Opaque" 
+        "Queue" = "Geometry"
+        }
+        Blend [_SrcBlend] [_DstBlend]
         LOD 100
-        
+        Cull [_Face]
         Pass
         {
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            // make fog work
+            #pragma shader_feature _ENABLE_ON
             #pragma multi_compile_fog
+            #pragma multi_compile _OPTIONS_OFF _OPTIONS_RED _OPTIONS_BLUE
 
             #include "UnityCG.cginc"
-
+            
             struct appdata
             {
                 float4 vertex : POSITION;
@@ -42,6 +61,8 @@ Shader "USB/USB_simple_color"
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
+            float _Brightness;
+            int _Samples;
 
             v2f vert (appdata v)
             {
@@ -58,7 +79,13 @@ Shader "USB/USB_simple_color"
                 fixed4 col = tex2D(_MainTex, i.uv);
                 // apply fog
                 UNITY_APPLY_FOG(i.fogCoord, col);
+                #if _OPTIONS_OFF
                 return col;
+                #elif _OPTIONS_RED
+                return col * float4(1,0,0,1)
+                #elif _OPTIONS_BLUE
+                return col * float4(0,0,1,1)
+                #endif
             }
             ENDCG
         }

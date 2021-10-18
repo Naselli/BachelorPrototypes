@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: simple_color
   m_Shader: {fileID: 4800000, guid: 9666d6c6703ca3f46a9627792e46e2bb, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _ENABLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -65,11 +65,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Brightness: 0.271
     - _BumpScale: 1
     - _Cid: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Enable: 1
+    - _Face: 1
     - _Factor: 0.3
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -77,7 +80,9 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _Option: 0
     - _Parallax: 0.02
+    - _Samples: 101
     - _SmoothnessTextureChannel: 0
     - _Specular: 0.407
     - _SpecularHighlights: 1
