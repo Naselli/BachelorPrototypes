@@ -17,7 +17,7 @@ Shader "USB/USB_simple_color"
         [Header(Material Property Drawers)]
         [Toggle] _Enable ("Enable ?", Float) = 0
         [KeywordEnum(Off, Red, Blue)] _Option ("Color Option", Float) = 0
-        [Enum(Off, 0, Front, 1 , Back, 2)] _Face ("FaceCulling", Float) = 0
+        
         [PowerSlider(3.0)] _Brightness ("Brightness", Range(0.01, 1)) = 0.08
         [IntRange] _Samples ("Samples", Range(0,225)) = 100
         
@@ -25,16 +25,24 @@ Shader "USB/USB_simple_color"
         [Header(Blend modes)]
         [Enum(UnityEngine.Rendering.BlendMode)] _SrcBlend ("SrcFactor", Float) = 1
         [Enum(UnityEngine.Rendering.BlendMode)] _DstBlend ("DstFactor", Float) = 1
+        [Enum(Off, 0, Front, 1 , Back, 2)] _Face ("FaceCulling", Float) = 0
+        [Enum(UnityEngine.Rendering.CullMode)] _Cull ("Cull", Float) = 0
     }
     SubShader
     {
         Tags { 
-        "RenderType"="Opaque" 
-        "Queue" = "Geometry"
+        //"RenderType"="Opaque" 
+        //"Queue" = "Geometry"
+        "RenderType" = "Transparent"
+        "Queue" = "Transparent"
         }
-        Blend [_SrcBlend] [_DstBlend]
+        //Blend [_SrcBlend] [_DstBlend]
+        ZWrite Off
+        Blend OneMinusDstColor One 
+        AlphaToMask On
+        ColorMask RGB
         LOD 100
-        Cull [_Face]
+        Cull [_Cull]
         Pass
         {
             CGPROGRAM
