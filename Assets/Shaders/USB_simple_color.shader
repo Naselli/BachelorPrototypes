@@ -81,11 +81,18 @@ Shader "USB/USB_simple_color"
                 return o;
             }
 
+void FakeLight_float (in float3 Normal, out float3 Out)
+{
+    float3 operation = Normal;
+    Out = operation; 
+}
             fixed4 frag (v2f i) : SV_Target
             {
-                // sample the texture
-                fixed4 col = tex2D(_MainTex, i.uv);
-                // apply fog
+                float3 n = i.normal;      // declare the normals. 
+                 float3 col = 0;           // declare the output. 
+            FakeLight_float (n, col); // pass both values ​​as arguments.
+
+    return float4(col.rgb, 1);
                 UNITY_APPLY_FOG(i.fogCoord, col);
                 #if _OPTIONS_OFF
                 return col;
