@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.2/staging' branch; Version is '2021.2.0b16 (edbc0738c91b) revision 15580167'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 22000.160; Version 2009; 64bit' Language: 'en' Physical Memory: 16230 MB
+OS: 'Windows 10 Home; OS build 22000.282; Version 2009; 64bit' Language: 'en' Physical Memory: 16230 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -15,15 +15,9 @@ C:/Users/conta/Documents/GitHub/BachelorPrototypes
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-<<<<<<< Updated upstream
-50836
-Successfully changed project path to: /Users/lucanaselli/Desktop/Github folders/BachelorPrototypes
-/Users/lucanaselli/Desktop/Github folders/BachelorPrototypes
-=======
-54681
+52548
 Successfully changed project path to: C:/Users/conta/Documents/GitHub/BachelorPrototypes
 C:/Users/conta/Documents/GitHub/BachelorPrototypes
->>>>>>> Stashed changes
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -53,11 +47,7 @@ C:/Users/conta/Documents/GitHub/BachelorPrototypes
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-<<<<<<< Updated upstream
-Refreshing native plugins compatible for Editor in 76.21 ms, found 2 plugins.
-=======
-Refreshing native plugins compatible for Editor in 70.94 ms, found 2 plugins.
->>>>>>> Stashed changes
+Refreshing native plugins compatible for Editor in 25.64 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.0b16 (edbc0738c91b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.0b16/Editor/Data/Resources/UnitySubsystems
@@ -70,169 +60,90 @@ Direct3D:
     VRAM:     6052 MB
     Driver:   27.21.14.6079
 Initialize mono
-<<<<<<< Updated upstream
-Mono path[0] = '/Applications/Unity/Hub/Editor/2021.2.0b16/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2021.2.0b16/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
-Mono config path = '/Applications/Unity/Hub/Editor/2021.2.0b16/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56091
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2021.2.0b16/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.003249 seconds.
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 28.79 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.738 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1738ms)
-		BeginReloadAssembly (447ms)
-=======
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b16/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b16/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b16/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.0b16/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012658 seconds.
+Registered in 0.005683 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 34.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 25.24 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.234 seconds
+- Completed reload, in  0.817 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1235ms)
-		BeginReloadAssembly (114ms)
->>>>>>> Stashed changes
+	ReloadAssembly (817ms)
+		BeginReloadAssembly (86ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-<<<<<<< Updated upstream
-		EndReloadAssembly (593ms)
-			LoadAssemblies (447ms)
+		EndReloadAssembly (389ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (162ms)
+			SetupTypeCache (102ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (310ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (204ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (29ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (209ms)
-				ProcessInitializeOnLoadMethodAttributes (63ms)
-=======
-		EndReloadAssembly (594ms)
-			LoadAssemblies (110ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (151ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (321ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (35ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (189ms)
-				ProcessInitializeOnLoadMethodAttributes (86ms)
->>>>>>> Stashed changes
+				RefreshPlugins (25ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (122ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-<<<<<<< Updated upstream
-Registered in 0.010489 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.494 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1495ms)
-		BeginReloadAssembly (271ms)
-=======
-Registered in 0.006040 seconds.
+Registered in 0.004419 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.011 seconds
+- Completed reload, in  0.950 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2012ms)
-		BeginReloadAssembly (283ms)
->>>>>>> Stashed changes
+	ReloadAssembly (951ms)
+		BeginReloadAssembly (175ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-<<<<<<< Updated upstream
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1082ms)
-			LoadAssemblies (129ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (679ms)
+			LoadAssemblies (71ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (266ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (70ms)
-			SetupLoadedEditorAssemblies (453ms)
+			SetupTypeCache (181ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (293ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (1ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (65ms)
-				ProcessInitializeOnLoadAttributes (334ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
-				AfterProcessingInitializeOnLoad (2ms)
-=======
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (1573ms)
-			LoadAssemblies (269ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (282ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (641ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (39ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (136ms)
-				ProcessInitializeOnLoadAttributes (407ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
-				AfterProcessingInitializeOnLoad (16ms)
->>>>>>> Stashed changes
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (201ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-<<<<<<< Updated upstream
-Launching external process: /Applications/Unity/Hub/Editor/2021.2.0b16/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.13 seconds
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1508 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (34.9 KB). Loaded Objects now: 1971.
-Memory consumption went from 155.9 MB to 155.9 MB.
-Total: 3.630314 ms (FindLiveObjects: 0.165225 ms CreateObjectMapping: 0.055705 ms MarkObjects: 3.331093 ms  DeleteObjects: 0.077355 ms)
-=======
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1510 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (47.6 KB). Loaded Objects now: 1973.
-Memory consumption went from 70.0 MB to 70.0 MB.
-Total: 4.435200 ms (FindLiveObjects: 0.368000 ms CreateObjectMapping: 0.108800 ms MarkObjects: 3.868400 ms  DeleteObjects: 0.087300 ms)
->>>>>>> Stashed changes
+Unloading 1511 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (79.3 KB). Loaded Objects now: 1974.
+Memory consumption went from 70.7 MB to 70.6 MB.
+Total: 2.771300 ms (FindLiveObjects: 0.133000 ms CreateObjectMapping: 0.045000 ms MarkObjects: 2.521400 ms  DeleteObjects: 0.071200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -246,80 +157,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-<<<<<<< Updated upstream
-  Time since last request: 19793.666923 seconds.
-  path: Assets/Shaders.unity
-  artifactKey: Guid(0061c003d9b504606b7808a193c223d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders.unity using Guid(0061c003d9b504606b7808a193c223d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98db9f9f2e004b8e3c9fff7b33647c48') in 0.015011 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.505488 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ded61706906fbe69fcb84af21e595b6') in 0.001655 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5487.089243 seconds.
-  path: Assets/Shaders/USB_Stensil.shader
-  artifactKey: Guid(8ed218b47ed934fc99359bc2ee40b446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/USB_Stensil.shader using Guid(8ed218b47ed934fc99359bc2ee40b446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd69936e3da0352a6f88459b9f14768d') in 2.100006 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.194114 seconds.
-  path: Assets/Shaders/USB_Stencil.shader
-  artifactKey: Guid(8ed218b47ed934fc99359bc2ee40b446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/USB_Stencil.shader using Guid(8ed218b47ed934fc99359bc2ee40b446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4c8aef566582624b4fa128ae38dea0d') in 0.004419 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.485759 seconds.
-  path: Assets/Shaders/USB_stencil_ref.shader
-  artifactKey: Guid(8ed218b47ed934fc99359bc2ee40b446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/USB_stencil_ref.shader using Guid(8ed218b47ed934fc99359bc2ee40b446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b61059e7c1ef2464d911b17792ee0b') in 0.003557 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 415.110147 seconds.
-  path: Assets/Shaders/USB_stencil_ref.shader
-  artifactKey: Guid(8ed218b47ed934fc99359bc2ee40b446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/USB_stencil_ref.shader using Guid(8ed218b47ed934fc99359bc2ee40b446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e11c8f4f4abdcf9eb6e56453d64083eb') in 0.003300 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 320.922564 seconds.
-  path: Assets/Shaders/USB_stencil_value.shader
-  artifactKey: Guid(600ae0506d3a0495eb1229593899355e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/USB_stencil_value.shader using Guid(600ae0506d3a0495eb1229593899355e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dc66d57dbd48bc6a7600d1ed852c020') in 0.002948 seconds 
-=======
-  Time since last request: 5651.786261 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(5d8003429a198b449aff0dd5d4268b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(5d8003429a198b449aff0dd5d4268b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e7f668004b6be45b42550d2d6f1df7') in 0.008185 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Shaders
-  artifactKey: Guid(4f5473010f1c5dc419d05cbc5f7e7980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders using Guid(4f5473010f1c5dc419d05cbc5f7e7980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f834a9f16d7d27d1d7b286c1de2f0eb9') in 0.004130 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Shaders/USB_simple_color.shader
-  artifactKey: Guid(9666d6c6703ca3f46a9627792e46e2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/USB_simple_color.shader using Guid(9666d6c6703ca3f46a9627792e46e2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c67edd6934d0abbeeddc070b7f164ac7') in 0.048847 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
+  Time since last request: 317804.231780 seconds.
   path: Assets/Scenes/Shaders.unity
   artifactKey: Guid(0061c003d9b504606b7808a193c223d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Shaders.unity using Guid(0061c003d9b504606b7808a193c223d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73efbad155c996b185f3fdc8ca001705') in 0.004187 seconds 
+Start importing Assets/Scenes/Shaders.unity using Guid(0061c003d9b504606b7808a193c223d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22cc729d224c70a0074710d8598cbc16') in 0.014729 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 68.490012 seconds.
-  path: Assets/Materials
-  artifactKey: Guid(03f7133ca9d593241b1e10a37cf1f97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials using Guid(03f7133ca9d593241b1e10a37cf1f97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1420ab7222a6fa7bc0c235baedd82d07') in 0.002298 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 150.159942 seconds.
-  path: Assets/Shaders/USB_stencil_ref.shader
-  artifactKey: Guid(8ed218b47ed934fc99359bc2ee40b446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/USB_stencil_ref.shader using Guid(8ed218b47ed934fc99359bc2ee40b446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8fb52cf9a22e7a5e97e4610d1d867b') in 0.002390 seconds 
->>>>>>> Stashed changes
+  Time since last request: 46.201717 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05818583595c369594535e06b260d488') in 0.002339 seconds 
