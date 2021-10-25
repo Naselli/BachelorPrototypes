@@ -1,9 +1,10 @@
-Shader "USB/USB_first_shader"
+Shader "USB/USB_function_abs"
 {
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
         _Color ("Texture Color", Color) = (1,1,1,1)
+        _Rotation ("Rotation", Range(0,360)) = 0
     }
     SubShader
     {
@@ -37,6 +38,7 @@ Shader "USB/USB_first_shader"
             sampler2D _MainTex;
             float4 _MainTex_ST;
             float4 _Color;
+            float _Rotation;
 
             v2f vert (appdata v)
             {
@@ -47,15 +49,39 @@ Shader "USB/USB_first_shader"
                 return o ;
             }
             
+            void Unity_Rotate_Degrees_float(float2 UV,float2 Center,float Rotation,out float2 Out)
+            {
+                Rotation = Rotation * (UNITY_PI/180.0f);
+                UV -= Center;
+                float s = sin(Rotation);
+                float c = cos(Rotation);
+                float2x2 rMatrix = float2x2(c, -s, s, c);
+                rMatrix *= 0.5;
+                rMatrix += 0.5;
+                rMatrix = rMatrix * 2 - 1;
+                UV.xy = mul(UV.yx, rMatrix);
+                UV += Center;
+                Out = UV;
+            }
             
             fixed4 frag (v2f i) : SV_Target
             {
-                // sample the texture
-                fixed4 col = tex2D(_MainTex, i.uv);
-                // apply fog
+                float u = abs(i.uv.x - 0.5);
+                float v = abs(i.uv.y - 0.5);
+
+                float rotation = _Rotation;
+                float center = 0.5;
+                float2 uv = 0;
+
+                Unity_Rotate_Degrees_float(float2(u,v), center, rotation, uv);
+
+                fixed4 col = tex2D(_MainTex, uv);
                 UNITY_APPLY_FOG(i.fogCoord, col);
-                return col * _Color ;
+                return col ;
             }
+
+           
+
             ENDCG
         }
     }
