@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Unlit_USB_InputsAndOutputs
-  m_Shader: {fileID: 4800000, guid: e0c7ef1f354abc84b846fcb84a680c2a, type: 3}
+  m_Name: Unlit_USB_Specular_Reflection
+  m_Shader: {fileID: 4800000, guid: b87a317e0d4f55241b330e90737a4072, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -23,7 +23,13 @@ Material:
         m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecularTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _SpecularInt: 1
+    - _SpecularPow: 64
     m_Colors: []
   m_BuildTextureStacks: []
