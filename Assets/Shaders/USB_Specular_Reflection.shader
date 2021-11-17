@@ -3,7 +3,7 @@ Shader "Unlit/USB_Specular_Reflection"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _SpecularTex ("Specular Texture", 2D) = "white" {}
+        _SpecularTex ("Specular Texture", 2D) = "black" {}
         _SpecularInt ("Specular Intensity", Range(0,1)) = 1
         _SpecularPow ("Specular Power", Range(1,128)) = 64
     }
