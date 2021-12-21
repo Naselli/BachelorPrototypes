@@ -1,4 +1,13 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2021.2.0b16/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2021.2.0b16/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
-Cmd: shutdown
+
+Cmd: compileComputeKernel
+  insize=7938 file=C:/Users/conta/Documents/School/Github/BachelorPrototypes/Assets/RayMarching/RayMarching.compute kernel=CSMain cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=5 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayMarching.compute(157): implicit truncation of vector type
+  error: 1 plat 4 at RayMarching.compute(159): implicit truncation of vector type
+  error: 1 plat 4 at RayMarching.compute(160): implicit truncation of vector type
+  error: 1 plat 4 at RayMarching.compute(161): implicit truncation of vector type
+ ok=1 outsize=16858
+
+
+

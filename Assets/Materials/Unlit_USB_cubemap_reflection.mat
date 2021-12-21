@@ -29,9 +29,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ReflectionDet: 1
-    - _ReflectionExp: 1
+    - _ReflectionDet: 2.7
+    - _ReflectionExp: 1.18
     - _ReflectionInt: 1
-    - _ReflectionMet: 0
+    - _ReflectionMet: 0.235
     m_Colors: []
   m_BuildTextureStacks: []
