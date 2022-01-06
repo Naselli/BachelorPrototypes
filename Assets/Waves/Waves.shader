@@ -12,6 +12,7 @@ Shader "Custom/Waves"
         _WaveA ("WaveA", Vector) = (1,0,0.5,10)
         _WaveB ("WaveB", Vector) = (0,1,0.25,20)
         _WaveC ("WaveC", Vector) = (0,1,0.25,20)
+    	_Height("Height", float) = 1
     }
     SubShader
     {
@@ -35,6 +36,7 @@ Shader "Custom/Waves"
         half _Glossiness;
         half _Metallic;
         fixed4 _Color;
+        float _Height;
         //float _Wavelength, _Steepness;
         //float2 _Direction;
         float4 _WaveA, _WaveB,_WaveC;
@@ -81,6 +83,7 @@ Shader "Custom/Waves"
 			p += GerstnerWave(_WaveA, gridPoint, tangent, binormal);
 			p += GerstnerWave(_WaveB, gridPoint, tangent, binormal);
 			p += GerstnerWave(_WaveC, gridPoint, tangent, binormal);
+        	
 			float3 normal = normalize(cross(binormal, tangent));
 			vertexData.vertex.xyz = p;
 			vertexData.normal = normal;

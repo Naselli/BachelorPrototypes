@@ -23,7 +23,7 @@ Shader "Custom/DistortionFlow"
     }
     SubShader
     {
-        Tags { "RenderType"="Transparant" "Queue"="Transparant" }
+        Tags { "RenderType"="Transparent" "Queue"="Transparent" }
         LOD 200
 
         GrabPass {"_WaterBackground"}

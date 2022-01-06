@@ -39,13 +39,13 @@ Material:
     - _HeightScale: 1
     - _HeightScaleModulated: 4.95
     - _Metallic: 0
-    - _RefractionStrength: 0.243
+    - _RefractionStrength: 0.178
     - _Speed: 0.5
     - _Tiling: 1
     - _UJump: -0.246
     - _VJump: 0.034
-    - _WaterFogDensity: 0.74
+    - _WaterFogDensity: 0.87
     m_Colors:
     - _Color: {r: 0, g: 0.2608695, b: 1, a: 1}
-    - _WaterFogColor: {r: 0, g: 0, b: 0, a: 0}
+    - _WaterFogColor: {r: 0.05833927, g: 0.06317519, b: 0.1792453, a: 0}
   m_BuildTextureStacks: []

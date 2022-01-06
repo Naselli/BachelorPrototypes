@@ -39,14 +39,14 @@ Material:
     m_Floats:
     - _FlowOffset: 0
     - _FlowStrength: 0.1
-    - _Glossiness: 0.902
+    - _Glossiness: 0.258
     - _HeightScale: 1.41
     - _HeightScaleModulated: 9
-    - _Metallic: 0
+    - _Metallic: 0.551
     - _Speed: 0.5
     - _Tiling: 1.96
     - _UJump: 0.201
     - _VJump: -0.004
     m_Colors:
-    - _Color: {r: 0.5778747, g: 0.7819934, b: 0.8113208, a: 1}
+    - _Color: {r: 0.33908868, g: 0.5360932, b: 0.5660378, a: 1}
   m_BuildTextureStacks: []
